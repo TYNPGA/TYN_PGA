@@ -7,136 +7,157 @@
 
 <style>
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  color: white;
-  background:
-    radial-gradient(circle at top, #063d0b 0%, transparent 38%),
-    linear-gradient(145deg, #020603, #031406 55%, #000000);
-  display: flex;
-  justify-content: center;
-  padding: 35px 18px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    background:
+        radial-gradient(circle at top, #063d0b 0%, transparent 38%),
+        linear-gradient(145deg, #020603, #031406 55%, #000000);
+    display: flex;
+    justify-content: center;
+    padding: 25px 14px;
 }
 
 .container {
-  width: 100%;
-  max-width: 480px;
-  text-align: center;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
 }
 
 .logo {
-  width: 110px;
-  height: 110px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  background: #020602;
-  border: 3px solid #5cff38;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 34px;
-  font-weight: bold;
-  color: #72ff4d;
-  box-shadow:
-    0 0 15px #39ff14,
-    0 0 40px rgba(57, 255, 20, 0.45);
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #020602;
+    border: 3px solid #5cff38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #72ff4d;
+    box-shadow:
+        0 0 15px #39ff14,
+        0 0 40px rgba(57, 255, 20, 0.45);
 }
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 8px;
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 
 .subtitle {
-  color: #70ff50;
-  font-size: 16px;
-  margin-bottom: 32px;
+    color: #70ff50;
+    font-size: 16px;
+    margin-bottom: 25px;
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .link {
-  display: flex;
-  align-items: center;
-  min-height: 76px;
-  padding: 12px 20px;
-  border-radius: 22px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  background: rgba(0, 30, 5, 0.55);
-  border: 2px solid #39ff14;
-  box-shadow:
-    0 0 12px rgba(57, 255, 20, 0.2),
-    inset 0 0 20px rgba(57, 255, 20, 0.04);
-  transition: 0.2s;
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    padding: 8px 14px;
+    border-radius: 18px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    background: rgba(0, 30, 5, 0.55);
+    border: 2px solid #39ff14;
+    box-shadow:
+        0 0 12px rgba(57, 255, 20, 0.2),
+        inset 0 0 20px rgba(57, 255, 20, 0.04);
+    transition: 0.2s;
 }
 
 .link:hover {
-  transform: translateY(-3px);
-  background: rgba(20, 70, 20, 0.5);
-  box-shadow: 0 0 25px rgba(57, 255, 20, 0.45);
+    transform: translateY(-3px);
+    background: rgba(20, 70, 20, 0.5);
+    box-shadow: 0 0 25px rgba(57, 255, 20, 0.45);
 }
 
 .icon {
-  width: 55px;
-  height: 55px;
-  margin-right: 12px;
-  flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    margin-right: 12px;
+    flex: 0 0 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon img {
-  width: 55px;
-  height: 55px;
-  object-fit: contain;
-  display: block;
+    width: 55px !important;
+    height: 55px !important;
+    max-width: 55px !important;
+    max-height: 55px !important;
+    object-fit: contain !important;
+    display: block;
 }
 
 .link span:nth-child(2) {
-  flex: 1;
-  text-align: left;
+    flex: 1;
+    text-align: left;
 }
 
 .arrow {
-  color: #72ff4d;
-  font-size: 30px;
+    color: #72ff4d;
+    font-size: 26px;
+    margin-left: 8px;
 }
 
 .footer {
-  margin-top: 32px;
-  color: #72ff4d;
-  font-size: 15px;
+    margin-top: 28px;
+    color: #72ff4d;
+    font-size: 14px;
 }
 
 @media (max-width: 400px) {
-  body {
-    padding: 25px 14px;
-  }
+    body {
+        padding: 20px 10px;
+    }
 
-  h1 {
-    font-size: 32px;
-  }
+    .logo {
+        width: 80px;
+        height: 80px;
+        font-size: 25px;
+    }
 
-  .icon,
-  .icon img {
-    width: 45px;
-    height: 45px;
-  }
+    h1 {
+        font-size: 29px;
+    }
 
-  .link {
-    min-height: 70px;
-  }
+    .link {
+        min-height: 65px;
+        padding: 7px 10px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        flex: 0 0 45px;
+        margin-right: 10px;
+    }
+
+    .icon img {
+        width: 45px !important;
+        height: 45px !important;
+        max-width: 45px !important;
+        max-height: 45px !important;
+    }
 }
 </style>
 </head>
@@ -145,64 +166,57 @@ h1 {
 
 <div class="container">
 
-  <div class="logo">PGA</div>
+    <div class="logo">PGA</div>
 
-  <h1>Tyn</h1>
+    <h1>Tyn</h1>
 
-  <div class="subtitle">
-    Mis redes y contenido ✨
-  </div>
+    <div class="subtitle">
+        Mis redes y contenido ✨
+    </div>
 
-  <div class="links">
+    <div class="links">
 
-    <a class="link"
-       href="https://www.tiktok.com/@tyncreator"
-       target="_blank">
-      <span class="icon">
-        <img src="PGA_TikTok_icon.png" alt="TikTok">
-      </span>
-      <span>TikTok</span>
-      <span class="arrow">›</span>
-    </a>
+        <a class="link"
+           href="https://www.tiktok.com/@tyncreator"
+           target="_blank"
+           rel="noopener noreferrer">
+            <span class="icon">
+                <img src="PGA_TikTok_icon.png" alt="TikTok">
+            </span>
+            <span>TikTok</span>
+            <span class="arrow">›</span>
+        </a>
 
-    <a class="link"
-       href="https://www.roblox.com/users/profile?username=uhggtyn"
-       target="_blank">
-      <span class="icon">
-        <img src="PGA_Roblox_icon.png" alt="Roblox">
-      </span>
-      <span>Roblox</span>
-      <span class="arrow">›</span>
-    </a>
+        <a class="link"
+           href="https://www.roblox.com/share?code=c5337fb101c3cc42b9b355a9d002bdfd&type=Profile&source=ProfileShare&stamp=1786771222883"
+           target="_blank"
+           rel="noopener noreferrer">
+            <span class="icon">
+                <img src="PGA_Roblox_icon.png" alt="Roblox">
+            </span>
+            <span>Roblox</span>
+            <span class="arrow">›</span>
+        </a>
 
-    <a class="link"
-       href="https://www.youtube.com/@iityn_pgaii"
-       target="_blank">
-      <span class="icon">
-        <img src="PGA_YouTube_icon.png" alt="YouTube">
-      </span>
-      <span>YouTube</span>
-      <span class="arrow">›</span>
-    </a>
+        <a class="link"
+           href="https://www.youtube.com/@iityn_pgaii"
+           target="_blank"
+           rel="noopener noreferrer">
+            <span class="icon">
+                <img src="PGA_YouTube_icon.png" alt="YouTube">
+            </span>
+            <span>YouTube</span>
+            <span class="arrow">›</span>
+        </a>
 
-    <a class="link"
-       href="https://whatsapp.com/channel/0029VbD6DscBqbr4tgdF5P3A"
-       target="_blank">
-      <span class="icon">
-        <img src="PGA_WhatsApp_icon.png" alt="WhatsApp">
-      </span>
-      <span>WhatsApp</span>
-      <span class="arrow">›</span>
-    </a>
+    </div>
 
-  </div>
-
-  <div class="footer">
-    PGA • Tyn
-  </div>
+    <div class="footer">
+        PGA • Tyn
+    </div>
 
 </div>
 
 </body>
 </html>
-```
+
